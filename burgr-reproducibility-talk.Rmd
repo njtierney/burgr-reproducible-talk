@@ -1,94 +1,170 @@
 ---
-title: "Reproducibility: Now you can, too! And you! And you! And You! ..."
+title: "Reproducibility: Now you can, too! Reproducibility: Now you can, too!"
 author: "Nicholas Tierney"
 date: "18 August 2016"
-output: 
-  ioslides_presentation: 
-    keep_md: yes
-    logo: ~/Google Drive/ALL THE THINGS/PhD/burgr-draft.gif
-    smaller: yes
-    widescreen: yes
+output:
+  revealjs::revealjs_presentation:
+    theme: night
+    highlight: pygments
+    transition: slide
+    background_transition: slide
 ---
+    
+# The Situation {data-background=#FF9900}
 
-# The situation
+## {data-background=#6599FF}
 
 OK, let's talk about writing a paper.
 
-You've just finished writing a paper, you are ready to send it to your collaborators for their perusal.
+You've just finished writing a paper.
+
+You are ready to send it to your collaborators for their perusal.
 
 The paper is about modelling student results in one school in Australia.
 
-It's been a long process. You've been writing your analysis in this thing called "R". Let's recap some of the tricky parts.
+It's been a long process. 
 
-## The data
+You've been writing your analysis in this thing called "R". 
 
-- The data was in an excel workbook with 3 tabs.
-- It was "helpfully pre-aggregated", but you managed to unfuck, I mean unaggregate it.
-- There were only 100 students, and 5 variables
-- You needed to comb through each observation and remove strange characters
-- make some new summaries
+Let's recap some of the tricky parts.
 
-You didn't feel so bad about needing to comb through 100 rows.
+## {data-background-video="images/data-example.mp4"}
 
-After all, you'd only need to do it once, right?
+## {data-background=#6599FF}
 
-Man, you are glad you never have to do that again.
+Despite "helpful pre-aggregation", you have managed to <strike>unfuck</strike> unaggregate it.
 
-## The paper
+There were only 500 observations
 
-You wrote your document in Word, because that's what your other collaborator used.
+so you didn't feel too bad about combing through 100 rows.
 
-## The analysis
+You'd only need to do it once
 
-You're really happy, you've written all your code in 1 R script that does the following:
+... right?
 
-- Builds a linear model
-- Prints out the summary (which you copy and paste into word)
-- Creates a bunch of plots that you used to look at your model (which you manually saved and inserted into word)
+## The paper {data-background=#6599FF}
 
-## The internal reviewing process
+You wrote your document in Word
 
-It's a short paper, you're really happy with it.
+That's what your other collaborator used.
 
-You send it to your collaborator, and go and get a burger to celebrate.
+**picture of the word document**
 
-It's one of those big ones held together with a steak knife:
+## The analysis {data-background=#6599FF}
 
-![](http://burgerdays.com/wp-content/uploads/2012/08/strasburgerwhole.jpg)
+You're really happy, you've written all your code in 1 R script that:
 
-You get a notification. It's your collaborator. They're writing about your paper. They say:
+Builds a linear model
 
-> Wow, great job! I've just managed to get ethical approval to post the data online, and we also have another 10 schools to add - so we've got another 1000 data points! Do you think you could just redo the plots and the tables and see if anything changes?
+Prints out the summary 
 
-*funny image conveying large amounts of rage*
+_which you copy and paste into word_
 
-You imagine yourself redoing all of the code, to build the models, copy the tables, insert the figures and you start to feel cracks appear, you feel so damn tired, you start to wonder if -
+Creates a bunch of plots that you used to look at your model 
 
-Another email comes in:
+_which you manually saved and inserted into word_
 
-> Sorry, forgot to attach the data. It's in the same format as last time, that is fine, right? Didn't seem to cause you a problem last time!
+# The internal reviewing process {data-background=#FF9900}
+
+## Submit and celebrate {data-background=#6599FF}
+
+It's a short, well written paper.
+
+You are really happy with it.
+
+You email it to your collaborators
+
+You get a burger to celebrate.
+
+![](http://aht.seriouseats.com/images/2013/09/20130917-266522-one-eared-stag-meatstick.jpg)
+
+## Notification {data-background=#4CD964}
+
+Collaborator:
+
+> Wow, great job!
+
+> I've just managed to get ethical approval to host the data online, and we also have another 10 schools to add ...
+
+> so we've got another 1000 data points! 
+
+> Do you think you could just redo the plots and the tables and see if anything changes?
+
+## ... That's ... annoying {data-background=#c92828}
+
+![](https://media.giphy.com/media/MRLc0oJPeTcIw/giphy.gif)
+
+## You start to imagine ... {data-background=#6599FF}
+
+All of the code
+
+Building the models again
+
+Copying the tables into word
+
+Inserting the figures
+
+... And then there's the bibliio-
+
+<!-- and you start to feel cracks appear, you feel so damn tired, you start to wonder if - -->
+
+## Notification {data-background=#4CD964}
+
+> Sorry, forgot to attach the data. 
+
+
+> It's in the same format as last time, that is fine, right? 
+
+> Didn't seem to cause you a problem last time! :)
+
+## Blinding Rage {data-background=#e31616}
 
 You lose your mind and go into a murderous rage, letting loose on the students in the university armed with nothing but a steak knife.
 
+![](http://media.graytvinc.com/images/810*455/japan+knife+attack.jpg)
+
 Alongside the phrase *going postal*, they now add the phrase *it's reproducible*.
+
+## Wait, What?
 
 So let's pause for a minute before I take this story further.
 
-What the fuck?
+WTF?
+
+Why The Face?
 
 It's 2016.
 
-We've discovered gravity waves, put people into space regularly, catch pokémon on our phones, have conversations with people on the other side of the world, and find photos of cats doing the cutest darn things.
+## {data-background-image="https://upload.wikimedia.org/wikipedia/commons/8/89/STS-116_spacewalk_1.jpg"}
 
-Is there a better way?
+## {data-background-image="https://cdn1.vox-cdn.com/thumbor/SgIWbmtZPdngX0pP4ObeJ2h1_uA=/cdn0.vox-cdn.com/uploads/chorus_asset/file/6765535/Abra%20toilet.jpg"}
+
+## 
+
+We have conversations with people on the other side of the world
+
+## 
+
+We find photos of cats doing the cutest darn things.
+
+## 
+
+
+# Is there a better way?
+
+## 
 
 The answer is yes.
 
-The answer, is rmarkdown.
+The answer, is **rmarkdown**.
 
-# rmarkdown
+## Go back in time
 
-Let's set the wayback machine for 3 months ago, when this all started.
+Set the wayback machine for 3 months ago.
+
+{  demo  }
+
+# Pause
 
 Here's what happens.
 
@@ -100,7 +176,7 @@ You have your step that reads in your data.
 
 It cleans it.
 
-At first it hurts, and then it becomes addictive and interesting. Like heroin, but it's data science. Data heroin. Heroin science? You're not sure what to call it, but you like it.
+At first it hurts, and then it becomes addictive and interesting. Like pistachios, but it's data science. Data nuts. Nut science? You're not sure what to call it, but you like it.
 
 You've written your introduction, you're really clear on what your paper is going to achieve.
 
@@ -124,6 +200,8 @@ And:
 
 It's in word.
 
+## Way Back, rewind.
+
 OK. So you're back in the cafeteria, holding a steak knife
 
 Your collaborator adds another 1000 rows to your dataset.
@@ -138,15 +216,25 @@ You get changes in the tables and plots.
 
 It's all in one document. It's rmarkdown. It's great. You send the paper through to your collaborator. You go to eat another burger but it's only been 1 hour so you just make a cup of tea instead.
 
+# Submit and Publish
+
 Fast track 3 months - your paper has gone through a fast review process, the reviewers were all able to recreate your results, they're impressed.
 
+# GitHub
+
 You put all the code and data onto this thing called GitHub, where people can access it. You post about your accomplishment on twitter, and then you forget about it.
+
+![](https://www.themexpert.com/images/easyblog_articles/270/twitter_cover.jpg)
+
+# Pause
 
 But that day, someone reads your paper. They like what they see. They get the code and the data from github.
 
 They reproduce your results.
 
 Then they add a bit more - they try out this new statistical model on your data.
+
+# Reproduction, Publication.
 
 They get some extra insights, glean some new information, and then publish a paper based on your research.
 
@@ -155,5 +243,7 @@ You get cited.
 You celebrate, you eat a burger.
 
 And this whole process, it is reproducible - you can do it too.
+
+# It's free.
 
 Also, it's free. I think I forgot to mention that.
