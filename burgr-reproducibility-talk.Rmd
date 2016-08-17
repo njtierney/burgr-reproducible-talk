@@ -145,9 +145,9 @@ It's 2016.
 
 ## {data-background-image="https://upload.wikimedia.org/wikipedia/commons/8/89/STS-116_spacewalk_1.jpg"}
 
-## {data-background-image="https://cdn1.vox-cdn.com/thumbor/SgIWbmtZPdngX0pP4ObeJ2h1_uA=/cdn0.vox-cdn.com/uploads/chorus_asset/file/6765535/Abra%20toilet.jpg"}
-
 ## {data-background-image="http://specials-images.forbesimg.com/imageserve/38606109/960x0.jpg?fit=scale"}
+
+## {data-background-image="https://cdn1.vox-cdn.com/thumbor/SgIWbmtZPdngX0pP4ObeJ2h1_uA=/cdn0.vox-cdn.com/uploads/chorus_asset/file/6765535/Abra%20toilet.jpg"}
 
 ## {data-background-image="https://67.media.tumblr.com/e3e059dec30337f593abc3b554162eb9/tumblr_nb4z62cjaL1ry46hlo1_500.gif"}
 
@@ -223,30 +223,45 @@ Fast track 3 months - your paper has gone through a fast review process, the rev
 
 ## Share and Promote
 
-
-
 You put all the code and data onto this thing called GitHub, where people can access it. You post about your accomplishment on twitter, and then you forget about it.
 
-![](https://www.themexpert.com/images/easyblog_articles/270/twitter_cover.jpg)
+![](images/tweet-paper.png)
 
-# Pause
+## Enter <Insert Academic> {data-background=#6599FF}
 
-But that day, someone reads your paper. They like what they see. They get the code and the data from github.
+Someone reads your paper. 
+
+They like what they see. 
+
+![](https://media.giphy.com/media/XreQmk7ETCak0/giphy.gif)
+
+They get the code and the data from github
 
 They reproduce your results.
 
 Then they add a bit more - they try out this new statistical model on your data.
 
-# Reproduction, Publication.
+## Reproduction, Publication. {data-background=#FF9900}
 
-They get some extra insights, glean some new information, and then publish a paper based on your research.
+They get some extra insights.
+
+Glean some new information.
+
+They publish a paper based on your research.
+
+![](https://media.giphy.com/media/MTclfCr4tVgis/giphy.gif)
+
+## Publication, Celebration {data-background=#6599FF}
 
 You get cited.
 
 You celebrate, you eat a burger.
 
-And this whole process, it is reproducible - you can do it too.
+![](http://aht.seriouseats.com/images/2013/09/20130917-266522-one-eared-stag-meatstick.jpg)
 
-# It's free.
+This whole process, it is reproducible - you can do it too.
+
+## It's free. {data-background=#FF9900}
 
 Also, it's free. I think I forgot to mention that.
+
