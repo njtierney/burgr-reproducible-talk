@@ -12,35 +12,42 @@ output:
     
 # The Situation {data-background=#FF9900}
 
+![](https://image.freepik.com/free-icon/text-document_318-48568.png)
+![](http://media2.s-nbcnews.com/j/newscms/2014_12/258671/140317-kids-school-test-525_5838cb89d4483cd7f8cfbfe5210493e9.nbcnews-ux-2880-1000.jpg)
+
+<!-- ## {data-background=#6599FF} -->
+
+<!-- OK, let's talk about writing a paper. -->
+
+<!-- You've just finished writing a paper. -->
+
+<!-- You are ready to send it to your collaborators for their perusal. -->
+
+<!-- The paper is about modelling student results in one school in Australia. -->
+
+<!-- It's been a long process.  -->
+
+<!-- You've been writing your analysis in this thing called "R".  -->
+
+<!-- Let's recap some of the tricky parts. -->
+
+## The Data {data-background=#6599FF}
+
+![](images/data-3.png)
+
 ## {data-background=#6599FF}
 
-OK, let's talk about writing a paper.
+Despite "helpful pre-aggregation", you managed to <strike>unfuck</strike> unaggregate it.
 
-You've just finished writing a paper.
+There only about 500 observations
 
-You are ready to send it to your collaborators for their perusal.
-
-The paper is about modelling student results in one school in Australia.
-
-It's been a long process. 
-
-You've been writing your analysis in this thing called "R". 
-
-Let's recap some of the tricky parts.
-
-## {data-background-video="images/data-example.mp4"}
-
-## {data-background=#6599FF}
-
-Despite "helpful pre-aggregation", you have managed to <strike>unfuck</strike> unaggregate it.
-
-There were only 500 observations
-
-so you didn't feel too bad about combing through 100 rows.
+You didn't feel too bad about combing through 500 rows.
 
 You'd only need to do it once
 
 ... right?
+
+![](https://media.giphy.com/media/ToMjGpKniGqRNLGBrhu/giphy.gif)
 
 ## The paper {data-background=#6599FF}
 
@@ -48,21 +55,23 @@ You wrote your document in Word
 
 That's what your other collaborator used.
 
-**picture of the word document**
+![](images/doc-1.png)
 
 ## The analysis {data-background=#6599FF}
 
-You're really happy, you've written all your code in 1 R script that:
+![](images/copy-pasta-1.png)
 
-Builds a linear model
+<!-- You're really happy, you've written all your code in 1 R script that: -->
 
-Prints out the summary 
+<!-- Builds a linear model -->
 
-_which you copy and paste into word_
+<!-- Prints out the summary  -->
 
-Creates a bunch of plots that you used to look at your model 
+<!-- _which you copy and paste into word_ -->
 
-_which you manually saved and inserted into word_
+<!-- Creates a bunch of plots that you used to look at your model  -->
+
+<!-- _which you manually saved and inserted into word_ -->
 
 # The internal reviewing process {data-background=#FF9900}
 
@@ -112,7 +121,6 @@ Inserting the figures
 
 > Sorry, forgot to attach the data. 
 
-
 > It's in the same format as last time, that is fine, right? 
 
 > Didn't seem to cause you a problem last time! :)
@@ -123,7 +131,7 @@ You lose your mind and go into a murderous rage, letting loose on the students i
 
 ![](http://media.graytvinc.com/images/810*455/japan+knife+attack.jpg)
 
-Alongside the phrase *going postal*, they now add the phrase *it's reproducible*.
+<!-- Alongside the phrase *going postal*, they now add the phrase *it's reproducible*. -->
 
 ## Wait, What?
 
@@ -139,16 +147,9 @@ It's 2016.
 
 ## {data-background-image="https://cdn1.vox-cdn.com/thumbor/SgIWbmtZPdngX0pP4ObeJ2h1_uA=/cdn0.vox-cdn.com/uploads/chorus_asset/file/6765535/Abra%20toilet.jpg"}
 
-## 
+## {data-background-image="http://specials-images.forbesimg.com/imageserve/38606109/960x0.jpg?fit=scale"}
 
-We have conversations with people on the other side of the world
-
-## 
-
-We find photos of cats doing the cutest darn things.
-
-## 
-
+## {data-background-image="https://67.media.tumblr.com/e3e059dec30337f593abc3b554162eb9/tumblr_nb4z62cjaL1ry46hlo1_500.gif"}
 
 # Is there a better way?
 
@@ -216,11 +217,13 @@ You get changes in the tables and plots.
 
 It's all in one document. It's rmarkdown. It's great. You send the paper through to your collaborator. You go to eat another burger but it's only been 1 hour so you just make a cup of tea instead.
 
-# Submit and Publish
+# Submit and Publish {data-background-image="images/save-submit.png"}
 
 Fast track 3 months - your paper has gone through a fast review process, the reviewers were all able to recreate your results, they're impressed.
 
-# GitHub
+## Share and Promote
+
+
 
 You put all the code and data onto this thing called GitHub, where people can access it. You post about your accomplishment on twitter, and then you forget about it.
 
