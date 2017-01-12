@@ -1,7 +1,7 @@
 ---
 title: "Reproducibility: Now you can, too! Reproducibility: Now you can, too!"
 author: "Nicholas Tierney"
-date: "18 August 2016"
+date: "25 October 2016"
 output:
   revealjs::revealjs_presentation:
     theme: night
@@ -10,12 +10,9 @@ output:
     background_transition: slide
 ---
     
-# The Situation {data-background=#FF9900}
+## The Situation {data-background=#FF9900}
 
-![](https://image.freepik.com/free-icon/text-document_318-48568.png)
 ![](http://media2.s-nbcnews.com/j/newscms/2014_12/258671/140317-kids-school-test-525_5838cb89d4483cd7f8cfbfe5210493e9.nbcnews-ux-2880-1000.jpg)
-
-<!-- ## {data-background=#6599FF} -->
 
 <!-- OK, let's talk about writing a paper. -->
 
@@ -37,7 +34,7 @@ output:
 
 ## {data-background=#6599FF}
 
-Despite "helpful pre-aggregation", you managed to <strike>unfuck</strike> unaggregate it.
+Despite "helpful pre-aggregation", you managed to <strike>put out the fire</strike> unaggregate it.
 
 There only about 500 observations
 
@@ -73,8 +70,6 @@ That's what your other collaborator used.
 
 <!-- _which you manually saved and inserted into word_ -->
 
-# The internal reviewing process {data-background=#FF9900}
-
 ## Submit and celebrate {data-background=#6599FF}
 
 It's a short, well written paper.
@@ -86,6 +81,8 @@ You email it to your collaborators
 You get a burger to celebrate.
 
 ![](http://aht.seriouseats.com/images/2013/09/20130917-266522-one-eared-stag-meatstick.jpg)
+
+image from http://aht.seriouseats.com/images/2013/09/20130917-266522-one-eared-stag-meatstick.jpg
 
 ## Notification {data-background=#4CD964}
 
@@ -113,8 +110,6 @@ Copying the tables into word
 
 Inserting the figures
 
-... And then there's the bibliio-
-
 <!-- and you start to feel cracks appear, you feel so damn tired, you start to wonder if - -->
 
 ## Notification {data-background=#4CD964}
@@ -137,9 +132,6 @@ You lose your mind and go into a murderous rage, letting loose on the students i
 
 So let's pause for a minute before I take this story further.
 
-WTF?
-
-Why The Face?
 
 It's 2016.
 
@@ -265,3 +257,25 @@ This whole process, it is reproducible - you can do it too.
 
 Also, it's free. I think I forgot to mention that.
 
+
+## References
+
+- kids study: http://media2.s-nbcnews.com/j/newscms/2014_12/258671/140317-kids-school-test-525_5838cb89d4483cd7f8cfbfe5210493e9.nbcnews-ux-2880-1000.jpg
+
+- dumb and dumber gif: https://media.giphy.com/media/ToMjGpKniGqRNLGBrhu/giphy.gif
+
+- burger image: http://aht.seriouseats.com/images/2013/09/20130917-266522-one-eared-stag-meatstick.jpg
+
+- knife attack: http://media.graytvinc.com/images/810*455/japan+knife+attack.jpg
+
+- space station: https://upload.wikimedia.org/wikipedia/commons/8/89/STS-116_spacewalk_1.jpg
+
+- smartphone: http://specials-images.forbesimg.com/imageserve/38606109/960x0.jpg?fit=scale
+
+- pokemon toilet: https://cdn1.vox-cdn.com/thumbor/SgIWbmtZPdngX0pP4ObeJ2h1_uA=/cdn0.vox-cdn.com/uploads/chorus_asset/file/6765535/Abra%20toilet.jpg
+
+- lightsaber cats: https://67.media.tumblr.com/e3e059dec30337f593abc3b554162eb9/tumblr_nb4z62cjaL1ry46hlo1_500.gif
+
+- computer kid: https://media.giphy.com/media/XreQmk7ETCak0/giphy.gif
+
+- Spongbob gif: https://media.giphy.com/media/MTclfCr4tVgis/giphy.gif

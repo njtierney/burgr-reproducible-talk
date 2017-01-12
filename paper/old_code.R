@@ -1,4 +1,11 @@
-## code for analysing report for ...
+## code for analysing report for Australian schools paper
+
+# read in the libraries --------------------------------------------------------
+
+library(tidyverse)
+library(purrr)
+library(broom)
+library(knitr)
 
 # read in the data -------------------------------------------------------------
 

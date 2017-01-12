@@ -28,36 +28,42 @@ Donec felis felis, blandit in ultrices et, mollis nec est. Donec id vulputate do
 Etiam nec justo augue. Mauris porta, nulla quis cursus ultricies, justo nibh vestibulum lectus, quis vestibulum lacus erat et tellus. Morbi id enim id libero porttitor gravida in non lacus. Cras consequat tortor nec luctus egestas. Cras ac risus et ante imperdiet ultrices ac eu arcu. Vivamus sed maximus augue. Sed sed dictum massa.
 
 
-term              estimate    std.error    statistic     p.value
--------------  -----------  -----------  -----------  ----------
-(Intercept)     -8.3878831   13.5301433   -0.6199404   0.5368635
-raceBlack       -1.1201208    3.8950693   -0.2875740   0.7743340
-raceHispanic     1.1129695    3.6983150    0.3009396   0.7641547
-raceNative       8.0526307    7.1002388    1.1341352   0.2597497
-raceWhite       -0.5171733    3.4735187   -0.1488903   0.8819733
-grade_1          0.1897152    0.1814424    1.0455945   0.2985484
-grade_2          0.1361920    0.1419269    0.9595927   0.3398311
-grade_3         -0.3002051    0.1422987   -2.1096819   0.0376617
-grade_4          1.0842190    0.1054774   10.2791557   0.0000000
+term               estimate   std.error    statistic     p.value
+--------------  -----------  ----------  -----------  ----------
+(Intercept)       1.4897094   4.4035183    0.3382998   0.7352091
+raceBi-Racial    -1.4757450   1.7665669   -0.8353746   0.4037088
+raceBlack        -0.5558692   1.0964314   -0.5069803   0.6122818
+raceHawaiian     -4.4952022   6.2716472   -0.7167498   0.4736979
+raceHispanic     -0.0198448   1.0322860   -0.0192242   0.9846662
+raceNative       -1.5378581   2.7038861   -0.5687584   0.5696493
+raceOther         1.2371632   3.7039476    0.3340121   0.7384413
+raceWhite        -0.6756918   0.9576327   -0.7055856   0.4806122
+grade_1           0.0261554   0.0585188    0.4469566   0.6550044
+grade_2          -0.0584450   0.0464271   -1.2588552   0.2083800
+grade_3           0.0096116   0.0458279    0.2097334   0.8339190
+grade_4           1.0188486   0.0322220   31.6196389   0.0000000
 
 
 
-Statistic               Value
---------------  -------------
-r.squared           0.7261424
-adj.r.squared       0.7017995
-sigma               5.8525412
-statistic          29.8297433
-p.value             0.0000000
-df                  9.0000000
-logLik           -310.6777816
-AIC               641.3555631
-BIC               667.3067616
-deviance         3082.7015043
-df.residual        90.0000000
+Statistic                Value
+--------------  --------------
+r.squared            0.7726950
+adj.r.squared        0.7701643
+sigma                6.2009880
+statistic          305.3257006
+p.value              0.0000000
+df                  12.0000000
+logLik           -3237.6108818
+AIC               6501.2217636
+BIC               6565.0225822
+deviance         37990.8255303
+df.residual        988.0000000
 
 ![](reproducible-burgr_files/figure-html/results-1.png)<!-- -->
 
+$$
+\frac{1}{\pi^2} + \sum_1^N x_n
+$$
 
 
 # Conclusion

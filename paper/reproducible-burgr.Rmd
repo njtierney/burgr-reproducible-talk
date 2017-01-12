@@ -1,26 +1,25 @@
 ---
-title: "The Importance of Reproducible Burgers"
+title: "The relationship between school grade and test scores"
 author: "Nicholas Tierney"
-date: "17 August 2016"
+date: "24 October 2016"
 output:
+  word_document: default
+  pdf_document: default
   html_document:
     keep_md: yes
-  pdf_document: default
-  word_document: default
 ---
 
 ```{r setup, include=FALSE}
+
 knitr::opts_chunk$set(echo = TRUE,
                       include = FALSE,
                       cache = FALSE)
+
 ```
 
 ```{r library}
 
-library(plyr)
-library(dplyr)
-library(ggplot2)
-library(tidyr)
+library(tidyverse)
 library(purrr)
 library(broom)
 library(knitr)
@@ -41,6 +40,9 @@ names(school_data) <- c("ID",
 
 school_data <- slice(school_data,-20)
 
+mean(iris$Sepal.Length)
+
+
 school_data_clean <-
 school_data %>%
     select(actual_race,
@@ -57,6 +59,8 @@ school_data %>%
            grade_3 = `Grade 3`,
            grade_4 = `Grade 4`,
            grade_5 = `Grade 5`)
+
+school_data_clean
 
 ```
 
@@ -77,8 +81,8 @@ big_school_data_clean <- read_csv("data/big_burgr_data_clean.csv") %>%
 
 # specify the data
 
-data <- school_data_clean
-# data <- big_school_data_clean
+# data <- school_data_clean
+data <- big_school_data_clean
 
 ```
 
@@ -95,9 +99,7 @@ Donec felis felis, blandit in ultrices et, mollis nec est. Donec id vulputate do
 
 # Results
 
-Etiam nec justo augue. Mauris porta, nulla quis cursus ultricies, justo nibh vestibulum lectus, quis vestibulum lacus erat et tellus. Morbi id enim id libero porttitor gravida in non lacus. Cras consequat tortor nec luctus egestas. Cras ac risus et ante imperdiet ultrices ac eu arcu. Vivamus sed maximus augue. Sed sed dictum massa.
-
-```{r results, include = TRUE, echo = FALSE, warning = FALSE, message = FALSE}
+```{r results, include = TRUE, echo = FALSE, warning = FALSE, message = FALSE,  }
 
 lm_fit_school <- lm(grade_5 ~ race + grade_1 + grade_2 + grade_3 + grade_4,
                     data = data)
@@ -115,18 +117,24 @@ lm_fit_school %>%
 library(modelr)
 
 data %>%
-    add_predictions(preds = lm_fit_school) %>%
+    add_predictions(lm_fit_school) %>%
     ggplot(data = .,
            aes(x = grade_5,
-               y = preds)) + 
+               y = pred)) + 
     geom_point()
-               
-```
 
+```
+The $R^2$ value of the linear model was `r round(glance(lm_fit_school)$r.squared, 2)` (p $\leq$ `r round(glance(lm_fit_school)$p.value, 3)`).
+
+Etiam nec justo augue. Mauris porta, nulla quis cursus ultricies, justo nibh vestibulum lectus, quis vestibulum lacus erat et tellus. Morbi id enim id libero porttitor gravida in non lacus. Cras consequat tortor nec luctus egestas. Cras ac risus et ante imperdiet ultrices ac eu arcu. Vivamus sed maximus augue. Sed sed dictum massa.
+
+
+
+$$
+\frac{1}{\pi^2} + \sum_1^N x_n
+$$
 
 
 # Conclusion
 
 Etiam facilisis finibus justo in laoreet. Nulla feugiat libero in nibh euismod, fringilla molestie neque dapibus. Aliquam non felis eu risus dignissim maximus quis non arcu. Aenean porttitor euismod est et posuere. Aenean placerat neque at ante commodo, at gravida augue lacinia. Aliquam quis dictum nunc. Praesent semper faucibus dignissim. In arcu ligula, consequat sed felis lobortis, mattis pharetra metus. Aliquam et leo at eros auctor ornare. Nullam odio diam, viverra sed vehicula vel, posuere a nulla. Sed ac felis eros.
-
-# Bibliography
